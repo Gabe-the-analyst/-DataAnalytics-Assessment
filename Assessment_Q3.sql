@@ -1,3 +1,5 @@
+-- Question 3: Find all active accounts (savings or investments) with no transactions in the last 1 year (365 days).
+
 WITH last_txn_per_plan AS (
     -- Step 1: Identify the latest successful deposit transaction date for each plan
     -- We focus only on transactions marked as 'success' or 'successful' (case-insensitive)
