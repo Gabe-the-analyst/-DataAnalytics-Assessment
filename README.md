@@ -102,8 +102,7 @@ To find out how long a plan had been inactive, I used the DATEDIFF() function. T
 Because there could be thousands of inactive plans, I limited the results to the top 50 and sorted them by inactivity days to show the worst offenders first. This helps the ops team focus their efforts efficiently.
 
 
-**Question 4: For each customer, assuming the profit_per_transaction is 0.1% of the transaction value, calculate: Account tenure (months since signup), Total transactions, Estimated CLV (Assume: CLV = (total_transactions / tenure) * 12 * avg_profit_per_transaction), and Order by estimated CLV from highest to lowest.
-**
+**Question 4: For each customer, assuming the profit_per_transaction is 0.1% of the transaction value, calculate: Account tenure (months since signup), Total transactions, Estimated CLV (Assume: CLV = (total_transactions / tenure) * 12 * avg_profit_per_transaction), and Order by estimated CLV from highest to lowest.**
 
 **Step 1: Get All Successful Transactions**
 I began by filtering the savings_savingsaccount table to get only transactions marked as successful. This means I looked for rows where transaction_status is either 'success' or 'successful', ignoring case differences. I selected the owner_id (the customer) and the amount of each transaction because these are needed to calculate totals and averages.
