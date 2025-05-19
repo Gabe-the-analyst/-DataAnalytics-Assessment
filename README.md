@@ -2,7 +2,7 @@ Process Steps and Challenges - Cowrywise Assessment
 
 This document contains a detailed summary of my step-by-step explanations and identified challenges for each question from the assessment. I appreciate the time taken to consider my submission
 
-Question 1: Write a query to find customers with at least one funded savings plan AND one funded investment plan, sorted by total deposits.
+**Question 1: Write a query to find customers with at least one funded savings plan AND one funded investment plan, sorted by total deposits.**
 
 Step 1: Identify Customers with Savings Plans
 I started by looking into the plans_plan table to identify customers who have at least one regular savings plan. To do this, I filtered using is_regular_savings = 1. I grouped the results by owner_id and counted the number of savings plans each customer has.
