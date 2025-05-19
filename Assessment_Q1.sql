@@ -1,7 +1,7 @@
 -- Question 1: Write a query to find customers with at least one funded savings plan AND one funded investment plan, sorted by total deposits.
 
--- Step 1: Get all customers who have at least one funded savings plan
 WITH savings_plans AS (
+-- Step 1: Get all customers who have at least one funded savings plan
     SELECT
         owner_id,                     -- ID of the customer who owns the plan
         COUNT(*) AS savings_count     -- Count how many savings plans they have
