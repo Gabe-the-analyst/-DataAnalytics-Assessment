@@ -1,3 +1,5 @@
+-- Question 2: Calculate the average number of transactions per customer per month and categorize them: "High Frequency" (≥10 transactions/month), "Medium Frequency" (3-9 transactions/month), "Low Frequency" (≤2 transactions/month)
+
 WITH successful_savings AS (
     -- Step 1: Filter savings transactions to include only those that were successful
     -- We select the transaction ID, the owner (customer) ID, and the date of the transaction
