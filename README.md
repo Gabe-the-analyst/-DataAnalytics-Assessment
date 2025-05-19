@@ -71,6 +71,14 @@ It was important to exclude customers who were inactive. I filtered out customer
 Step 7: Sort and Limit the Result
 Finally, I sorted the results by the total deposit amount in descending order, so customers who deposited the most would appear first. To improve performance and keep the output manageable, I limited the list to the top 50 customers.
 
+Challenges Encountered and How I Solved Them:
+
+Only Looking at Deposits:
+I focused on successful savings deposits only. Withdrawals and other transaction types might also show how active a customer is, but were not included here.
+
+What Counts as “Successful”:
+The transaction status values varied, so I had to be careful to include only the right ones (‘success’ or ‘successful’) to avoid counting failed or pending transactions.
+
 Question 3: Find all active accounts (savings or investments) with no transactions in the last 1 year (365 days).
 
 Step 1: Find the Latest Successful Transaction per Plan
