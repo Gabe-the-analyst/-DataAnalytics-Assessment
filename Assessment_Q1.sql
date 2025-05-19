@@ -1,3 +1,5 @@
+-- Question 1: Write a query to find customers with at least one funded savings plan AND one funded investment plan, sorted by total deposits.
+
 -- Step 1: Get all customers who have at least one funded savings plan
 WITH savings_plans AS (
     SELECT
